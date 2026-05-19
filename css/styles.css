@@ -45,6 +45,418 @@ a {
   text-decoration: none;
   color: inherit;
 }
+body {
+  background: var(--bg-primary);
+  font-family: 'Rajdhani', sans-serif;
+}
+
+/* Wrapper del carousel */
+.carousel-wrapper {
+  position: relative;
+  max-width: 1100px;
+  margin: 40px auto;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 40px rgba(0, 229, 255, 0.08), 0 0 80px rgba(124, 58, 237, 0.06);
+}
+
+/* Imagen del slide */
+.carousel-item img {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  filter: brightness(1);
+}
+
+/* Overlay de degradado */
+.carousel-item::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(10, 10, 15, 0.95) 0%,
+    rgba(10, 10, 15, 0.6) 55%,
+    transparent 100%
+  );
+  pointer-events: none;
+}
+
+/* Caption principal */
+.carousel-caption {
+  position: absolute;
+  top: 0; left: 0; bottom: 0;
+  width: 55%;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 50px;
+  text-align: left;
+  z-index: 10;
+  pointer-events: none;
+}
+
+/* Badge de descuento */
+.badge-descuento {
+  display: inline-block;
+  background: var(--accent-pink);
+  color: #fff;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 5px 14px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  width: fit-content;
+  box-shadow: 0 0 14px rgba(255, 45, 120, 0.5);
+  animation: pulseGlow 2s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 14px rgba(255, 45, 120, 0.5); }
+  50%       { box-shadow: 0 0 28px rgba(255, 45, 120, 0.85); }
+}
+
+/* Título del juego */
+.game-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.4rem;
+  font-weight: 900;
+  color: var(--text-primary);
+  line-height: 1.1;
+  margin-bottom: 14px;
+  text-shadow: 0 0 30px rgba(0, 229, 255, 0.3);
+}
+
+/* Descripción */
+.game-desc {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+  line-height: 1.6;
+  max-width: 400px;
+}
+
+/* Precios */
+.price-block {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 28px;
+}
+
+.price-original {
+  font-size: 1rem;
+  color: var(--text-muted);
+  text-decoration: line-through;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.price-final {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--accent-green);
+  text-shadow: 0 0 16px rgba(0, 255, 204, 0.5);
+}
+
+/* Botón CTA */
+.btn-comprar {
+  display: inline-block;
+  background: transparent;
+  border: 2px solid var(--accent-cyan);
+  color: var(--accent-cyan);
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 12px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  width: fit-content;
+  transition: background 0.3s, box-shadow 0.3s, color 0.3s;
+  pointer-events: all;
+}
+
+.btn-comprar:hover {
+  background: var(--accent-cyan);
+  color: var(--bg-primary);
+  box-shadow: 0 0 24px rgba(0, 229, 255, 0.5);
+}
+
+/* Chip de género */
+.genre-chip {
+  font-size: 0.72rem;
+  color: var(--accent-purple);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+/* Línea decorativa */
+.deco-line {
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent-cyan), var(--accent-purple));
+  border-radius: 2px;
+  margin-bottom: 16px;
+}
+
+/* Controles */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  background: rgba(26, 26, 46, 0.8);
+  opacity: 1;
+  margin: 0 16px;
+  backdrop-filter: blur(6px);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  border-color: var(--accent-cyan);
+  box-shadow: 0 0 14px rgba(0, 229, 255, 0.35);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 18px;
+  height: 18px;
+}
+body {
+  background: var(--bg-primary);
+  font-family: 'Rajdhani', sans-serif;
+}
+
+/* Wrapper del carousel */
+.carousel-wrapper {
+  position: relative;
+  max-width: 1100px;
+  margin: 40px auto;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 40px rgba(0, 229, 255, 0.08), 0 0 80px rgba(124, 58, 237, 0.06);
+}
+
+/* Imagen del slide */
+.carousel-item img {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  filter: brightness(1);
+}
+
+/* Overlay de degradado */
+.carousel-item::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(10, 10, 15, 0.95) 0%,
+    rgba(10, 10, 15, 0.6) 55%,
+    transparent 100%
+  );
+  pointer-events: none;
+}
+
+/* Caption principal */
+.carousel-caption {
+  position: absolute;
+  top: 0; left: 0; bottom: 0;
+  width: 55%;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 50px;
+  text-align: left;
+  z-index: 10;
+  pointer-events: none;
+}
+
+/* Badge de descuento */
+.badge-descuento {
+  display: inline-block;
+  background: var(--accent-pink);
+  color: #fff;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 5px 14px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  width: fit-content;
+  box-shadow: 0 0 14px rgba(255, 45, 120, 0.5);
+  animation: pulseGlow 2s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 14px rgba(255, 45, 120, 0.5); }
+  50%       { box-shadow: 0 0 28px rgba(255, 45, 120, 0.85); }
+}
+
+/* Título del juego */
+.game-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.4rem;
+  font-weight: 900;
+  color: var(--text-primary);
+  line-height: 1.1;
+  margin-bottom: 14px;
+  text-shadow: 0 0 30px rgba(0, 229, 255, 0.3);
+}
+
+/* Descripción */
+.game-desc {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+  line-height: 1.6;
+  max-width: 400px;
+}
+
+/* Precios */
+.price-block {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 28px;
+}
+
+.price-original {
+  font-size: 1rem;
+  color: var(--text-muted);
+  text-decoration: line-through;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.price-final {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--accent-green);
+  text-shadow: 0 0 16px rgba(0, 255, 204, 0.5);
+}
+
+/* Botón CTA */
+.btn-comprar {
+  display: inline-block;
+  background: transparent;
+  border: 2px solid var(--accent-cyan);
+  color: var(--accent-cyan);
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 12px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  width: fit-content;
+  transition: background 0.3s, box-shadow 0.3s, color 0.3s;
+  pointer-events: all;
+}
+
+.btn-comprar:hover {
+  background: var(--accent-cyan);
+  color: var(--bg-primary);
+  box-shadow: 0 0 24px rgba(0, 229, 255, 0.5);
+}
+
+/* Chip de género */
+.genre-chip {
+  font-size: 0.72rem;
+  color: var(--accent-purple);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+/* Línea decorativa */
+.deco-line {
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent-cyan), var(--accent-purple));
+  border-radius: 2px;
+  margin-bottom: 16px;
+}
+
+/* Controles */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  background: rgba(26, 26, 46, 0.8);
+  opacity: 1;
+  margin: 0 16px;
+  backdrop-filter: blur(6px);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  border-color: var(--accent-cyan);
+  box-shadow: 0 0 14px rgba(0, 229, 255, 0.35);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 18px;
+  height: 18px;
+}
+
+/* Indicadores */
+.carousel-indicators {
+  bottom: 18px;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 28px;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--border-color);
+  border: none;
+  opacity: 1;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+.carousel-indicators .active {
+  background: var(--accent-cyan);
+  box-shadow: 0 0 8px rgba(0, 229, 255, 0.6);
+}
+
+/* Indicadores */
+.carousel-indicators {
+  bottom: 18px;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 28px;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--border-color);
+  border: none;
+  opacity: 1;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+.carousel-indicators .active {
+  background: var(--accent-cyan);
+  box-shadow: 0 0 8px rgba(0, 229, 255, 0.6);
+}
 
 /* =====================================================
    NAVBAR (Tus estilos originales)

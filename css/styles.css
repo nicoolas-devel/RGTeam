@@ -255,14 +255,14 @@ a {
 /* =====================================================
    NAVBAR
    ===================================================== */
-.navbar-rg {
+.barra-navegacion {
   background: linear-gradient(to right, #05050a, #101625, #05050a);
   padding: 12px 20px;
   border-bottom: 1px solid rgba(255,255,255,0.05);
   box-shadow: 0 0 15px rgba(0,229,255,0.08);
 }
 
-.logo {
+.logo-rgteam {
   display: flex;
   align-items: center;
   font-size: 2rem;
@@ -276,9 +276,11 @@ a {
   color: var(--accent-cyan);
   font-weight: 900;
   letter-spacing: 1px;
-  text-shadow: 0 0 5px var(--accent-cyan),
-               0 0 10px var(--accent-cyan),
-               0 0 20px rgba(0,229,255,0.7);
+  text-shadow:
+    0 0 5px var(--accent-cyan),
+    0 0 10px var(--accent-cyan),
+    0 0 20px rgba(0,229,255,0.7);
+
   transition: 0.4s ease;
 }
 
@@ -289,24 +291,26 @@ a {
   transition: 0.4s ease;
 }
 
-.logo:hover {
+.logo-rgteam:hover {
   transform: scale(1.05);
 }
 
-.logo:hover .logo-rg {
+.logo-rgteam:hover .logo-rg {
   color: var(--accent-green);
-  text-shadow: 0 0 8px var(--accent-green),
-               0 0 16px var(--accent-green),
-               0 0 28px rgba(0,255,204,0.8);
+
+  text-shadow:
+    0 0 8px var(--accent-green),
+    0 0 16px var(--accent-green),
+    0 0 28px rgba(0,255,204,0.8);
 }
 
-.logo:hover .logo-team {
+.logo-rgteam:hover .logo-team {
   color: var(--accent-cyan);
   text-shadow: 0 0 8px rgba(0,229,255,0.5);
 }
 
 .navbar-nav {
-  gap: 4px;
+  gap: 70px;
 }
 
 .nav-link {
@@ -334,7 +338,7 @@ a {
   box-shadow: 0 0 10px rgba(0,229,255,0.3);
 }
 
-.search-box {
+.caja-buscador {
   display: flex;
   align-items: center;
   background: rgba(255,255,255,0.03);
@@ -344,12 +348,12 @@ a {
   transition: 0.3s ease;
 }
 
-.search-box:hover {
+.caja-buscador:hover {
   border-color: var(--accent-cyan);
   box-shadow: 0 0 12px rgba(0,229,255,0.2);
 }
 
-.input-search {
+.input-buscador {
   background: transparent !important;
   border: none !important;
   color: white !important;
@@ -358,16 +362,16 @@ a {
   font-size: 13px;
 }
 
-.input-search::placeholder {
+.input-buscador::placeholder {
   color: var(--text-secondary);
 }
 
-.input-search:focus {
+.input-buscador:focus {
   box-shadow: none !important;
   outline: none;
 }
 
-.btn-search {
+.boton-buscador {
   background: transparent !important;
   border: none !important;
   color: var(--accent-cyan);
@@ -375,17 +379,17 @@ a {
   transition: 0.3s ease;
 }
 
-.btn-search i {
+.boton-buscador i {
   font-size: 16px;
 }
 
-.btn-search:hover {
+.boton-buscador:hover {
   background: rgba(0,229,255,0.08) !important;
   color: white;
   box-shadow: inset 0 0 12px rgba(0,229,255,0.2);
 }
 
-.btn-rg {
+.boton-rg {
   background: transparent;
   border: 1px solid var(--border-color);
   color: white;
@@ -397,15 +401,19 @@ a {
   white-space: nowrap;
 }
 
-.btn-rg i {
+.boton-rg i {
   margin-right: 5px;
 }
 
-.btn-rg:hover {
+.boton-rg:hover {
   border-color: var(--accent-cyan);
   color: var(--accent-cyan);
   box-shadow: 0 0 10px rgba(0,229,255,0.4);
   transform: translateY(-2px);
+}
+
+.contenedor-botones {
+  align-items: center;
 }
 
 .navbar-toggler {
@@ -421,19 +429,23 @@ a {
 }
 
 @media (max-width: 991px) {
+
   .navbar-nav {
     margin-top: 20px;
     text-align: center;
   }
-  .search-box {
+
+  .caja-buscador {
     margin-top: 20px;
     width: 100%;
   }
-  .buttons-container {
+
+  .contenedor-botones {
     margin-top: 20px;
     flex-direction: column;
   }
-  .btn-rg {
+
+  .boton-rg {
     width: 100%;
   }
 }

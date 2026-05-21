@@ -16,48 +16,74 @@
   <body>
 
     <!-- ===== NAVBAR ===== -->
-    <header id="inicio">
-      <nav class="navbar navbar-expand-lg navbar-rg">
-        <div class="container-fluid">
-          <a class="navbar-brand logo" href="#">
-            <span class="logo-rg">RG</span>
-            <span class="logo-team">Team</span>
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContenido">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarContenido">
-            <ul class="navbar-nav mx-auto">
-              <li class="nav-item">
-                <a class="nav-link active" href="#inicio"> INICIO </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#juegos"> JUEGOS </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"> CONTACTO </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"> ACERCA DE </a>
-              </li>
-            </ul>
-            <form class="d-flex search-box me-3">
-              <input class="form-control input-search" type="search" placeholder="Buscar juegos..." />
-              <button class="btn btn-search" type="submit">
-                <i class="bi bi-search"></i>
-              </button>
-            </form>
-            <div class="d-flex gap-2 buttons-container">
-              <button class="btn btn-rg"><i class="bi bi-cart"></i> CARRITO</button>
-              <button class="btn btn-rg"><i class="bi bi-person"></i> LOGIN</button>
-              <button class="btn btn-rg"><i class="bi bi-person-plus"></i> REGISTRO</button>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </header>
+<header id="inicio">
+  <nav class="navbar navbar-expand-lg barra-navegacion">
+    <div class="container-fluid">
 
-    <main>
+      <a class="navbar-brand logo-rgteam" href="#">
+        <span class="logo-rg">RG</span>
+        <span class="logo-team">Team</span>
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#menuNavbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menuNavbar">
+
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#inicio">INICIO</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#juegos">JUEGOS</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">CONTACTO</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">ACERCA DE</a>
+          </li>
+        </ul>
+
+        <form class="d-flex caja-buscador me-3">
+          <input
+            class="form-control input-buscador"
+            type="search"
+            placeholder="Buscar juegos..."
+          />
+
+          <button class="btn boton-buscador" type="submit">
+            <i class="bi bi-search"></i>
+          </button>
+        </form>
+
+        <div class="d-flex gap-2 contenedor-botones">
+          <button class="btn boton-rg">
+            <i class="bi bi-cart"></i> CARRITO
+          </button>
+
+          <button class="btn boton-rg">
+            <i class="bi bi-person"></i> LOGIN
+          </button>
+
+          <button class="btn boton-rg">
+            <i class="bi bi-person-plus"></i> REGISTRO
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+</header>
 
       <!-- ===== CAROUSEL ===== -->
       <section>

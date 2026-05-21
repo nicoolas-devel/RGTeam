@@ -450,6 +450,130 @@ a {
   }
 }
 
+.modal-login-rg {
+  background: #0b0f1a;
+  border: 1px solid rgba(0,229,255,0.2);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 0 25px rgba(0,229,255,0.15);
+}
+
+.imagen-login {
+  height: 100%;
+  min-height: 500px;
+
+  background:
+    linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)),
+    url("https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1200&auto=format&fit=crop");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.contenido-login {
+  padding: 50px 35px;
+  color: white;
+}
+
+.titulo-login {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: var(--accent-cyan);
+  font-family: 'Orbitron', sans-serif;
+}
+
+.input-login {
+  background: rgba(255,255,255,0.04) !important;
+  border: 1px solid rgba(255,255,255,0.08) !important;
+  color: white !important;
+  padding: 12px;
+}
+
+.input-login::placeholder {
+  color: rgba(255,255,255,0.5);
+}
+
+.input-login:focus {
+  box-shadow: 0 0 12px rgba(0,229,255,0.25) !important;
+  border-color: var(--accent-cyan) !important;
+}
+
+.link-login {
+  color: var(--accent-cyan);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.link-login:hover {
+  text-decoration: underline;
+}
+
+.boton-login-w100 {
+  width: 100%;
+  padding: 12px;
+  background: var(--accent-cyan);
+  border: none;
+  color: black;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.boton-login-w100:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 15px rgba(0,229,255,0.5);
+}
+
+.separador-login {
+  text-align: center;
+  margin-top: 25px;
+  color: rgba(255,255,255,0.5);
+  position: relative;
+}
+
+.separador-login::before,
+.separador-login::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 30%;
+  height: 1px;
+  background: rgba(255,255,255,0.1);
+}
+
+.separador-login::before {
+  left: 0;
+}
+
+.separador-login::after {
+  right: 0;
+}
+
+.boton-social {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  color: white;
+  transition: 0.3s;
+}
+
+.boton-social:hover {
+  border-color: var(--accent-cyan);
+  color: var(--accent-cyan);
+  box-shadow: 0 0 12px rgba(0,229,255,0.2);
+}
+
+@media (max-width: 768px) {
+
+  .contenido-login {
+    padding: 35px 20px;
+  }
+
+  .titulo-login {
+    text-align: center;
+  }
+
+}
+
 /* =====================================================
    HERO SECTION
    ===================================================== */

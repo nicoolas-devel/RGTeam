@@ -71,8 +71,12 @@
             <i class="bi bi-cart"></i> CARRITO
           </button>
 
-          <button class="btn boton-rg">
-            <i class="bi bi-person"></i> LOGIN
+          <button
+          class="btn boton-rg"
+          data-bs-toggle="modal"
+          data-bs-target="#modalLogin"
+          >
+          <i class="bi bi-person"></i> LOGIN
           </button>
 
           <button class="btn boton-rg">
@@ -85,6 +89,90 @@
     </div>
   </nav>
 </header>
+<div
+  class="modal fade"
+  id="modalLogin"
+  tabindex="-1"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content modal-login-rg">
+
+      <div class="row g-0">
+
+        <!-- Imagen -->
+        <div class="col-md-6 d-none d-md-block">
+          <div class="imagen-login"></div>
+        </div>
+
+        <!-- Formulario -->
+        <div class="col-md-6">
+          <div class="contenido-login">
+
+            <h2 class="titulo-login">Bienvenido</h2>
+
+            <form action="./pages/error404.html">
+
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control input-login"
+                  placeholder="Correo electrónico"
+                  required
+                >
+              </div>
+
+              <div class="mb-3">
+                <input
+                  type="password"
+                  class="form-control input-login"
+                  placeholder="Contraseña"
+                  required
+                >
+              </div>
+
+              <div class="text-end mb-3">
+                <a href="./pages/error404.html" class="link-login">
+                  ¿Olvidaste tu contraseña?
+                </a>
+              </div>
+
+              <button type="submit" class="btn boton-login-w100">
+                Ingresar
+              </button>
+
+            </form>
+
+            <div class="separador-login">
+              <span>O continuar con</span>
+            </div>
+
+            <div class="d-flex gap-2 mt-3">
+
+              <a
+                href="./pages/error404.html"
+                class="btn boton-social w-100"
+              >
+                <i class="bi bi-google"></i> Google
+              </a>
+
+              <a
+                href="./pages/error404.html"
+                class="btn boton-social w-100"
+              >
+                <i class="bi bi-facebook"></i> Facebook
+              </a>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
 
       <!-- ===== CAROUSEL ===== -->
       <section>

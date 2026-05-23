@@ -1,0 +1,126 @@
+:root {
+  --bg-primary: #0a0a0f;
+  --bg-secondary: #12121a;
+  --bg-card: #1a1a2e;
+  --accent-cyan: #00e5ff;
+  --accent-green: #00ffcc;
+  --accent-pink: #ff2d78;
+  --accent-purple: #7c3aed;
+  --accent-orange: #ff6b00;
+  --text-primary: #ffffff;
+  --text-secondary: #a0a0b0;
+  --text-muted: #5a5a7a;
+  --star-active: #f5c518;
+  --border-color: #2a2a40;
+}
+
+.gb {
+  min-height: 380px;
+  background: url('../assets/img/bannerPublicidadRGteam.png') center/cover no-repeat;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.gb-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255,45,120,0.12);
+  border: 1px solid var(--accent-pink);
+  color: var(--accent-pink);
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  padding: 6px 18px;
+  border-radius: 4px;
+}
+
+.gb-dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--accent-pink);
+  animation: blink 1s ease-in-out infinite;
+}
+
+@keyframes blink {
+  0%,100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.gb-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: clamp(2.8rem, 9vw, 5.5rem);
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 2px;
+  color: var(--text-primary);
+  text-shadow: 0 0 40px rgba(0,229,255,0.3), 0 0 80px rgba(124,58,237,0.2);
+}
+
+.gb-title span {
+  color: var(--accent-cyan);
+  text-shadow: 0 0 30px rgba(0,229,255,0.8), 0 0 60px rgba(0,229,255,0.4);
+}
+
+.gb-sub {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1rem;
+  color: var(--text-secondary);
+  max-width: 420px;
+  line-height: 1.6;
+}
+
+.gb-btn-main {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--accent-purple), var(--accent-pink));
+  color: var(--text-primary);
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 14px 36px;
+  border-radius: 5px;
+  text-decoration: none;
+  box-shadow: 0 0 24px rgba(124,58,237,0.4), 0 0 48px rgba(255,45,120,0.2);
+  transition: box-shadow 0.3s;
+}
+
+.gb-btn-main:hover {
+  box-shadow: 0 0 36px rgba(124,58,237,0.7), 0 0 72px rgba(255,45,120,0.4);
+}
+
+.gb-stats {
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--bg-secondary);
+}
+
+.gb-stat-n {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: var(--accent-cyan);
+  text-shadow: 0 0 12px rgba(0,229,255,0.5);
+}
+
+.gb-stat-l {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.gb-line {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent-purple), var(--accent-cyan), var(--accent-pink));
+}
+
+.banner-section {
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+}

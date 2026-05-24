@@ -1298,3 +1298,65 @@ body {
   }
 
 }
+
+@media (max-width: 768px) {
+
+  .titulo-contacto {
+    font-size: 2.2rem;
+  }
+
+  .card-contacto {
+    padding: 20px;
+  }
+
+  .mapa-contacto {
+    height: 300px;
+  }
+
+}
+
+/* BOTON VOLVER */
+
+.boton-volver {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  padding: 14px 30px;
+
+  border: 1px solid var(--accent-cyan);
+
+  border-radius: 14px;
+
+  color: white;
+
+  background: rgba(0,229,255,0.08);
+
+  backdrop-filter: blur(8px);
+
+  font-size: 1rem;
+
+  font-weight: 700;
+
+  letter-spacing: 0.5px;
+
+  box-shadow:
+    0 0 12px rgba(0,229,255,0.15);
+
+  transition: 0.3s ease;
+}
+
+.boton-volver:hover {
+  border-color: var(--accent-cyan);
+
+  color: black;
+
+  background: var(--accent-cyan);
+
+  box-shadow:
+    0 0 25px rgba(0,229,255,0.45);
+
+  transform: translateY(-3px) scale(1.03);
+}

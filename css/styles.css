@@ -39,6 +39,7 @@ body {
   color: var(--text-primary);
   font-family: 'Rajdhani', sans-serif;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 a {

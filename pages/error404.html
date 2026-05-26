@@ -8,6 +8,11 @@
 
   <link rel="stylesheet" href="../css/error404.css">
 
+  <link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+/>
+
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 
@@ -41,15 +46,93 @@
           VOLVER AL INICIO
         </a>
 
-        <a href="#" class="btn-outline">
-          REPORTAR ERROR
-        </a>
+      <button
+        class="btn-outline"
+        data-bs-toggle="modal"
+        data-bs-target="#modalError"
+        >
+         REPORTAR ERROR
+      </button>
 
       </div>
 
     </div>
 
   </section>
+<!-- MODAL REPORTAR ERROR -->
 
+<div
+  class="modal fade"
+  id="modalError"
+  tabindex="-1"
+  aria-hidden="true"
+>
+
+  <div class="modal-dialog modal-dialog-centered">
+
+    <div class="modal-content modal-rg">
+
+      <div class="modal-header border-0">
+
+        <h5 class="modal-title titulo-modal">
+          Reportar error
+        </h5>
+
+        <button
+          type="button"
+          class="btn-close btn-close-white"
+          data-bs-dismiss="modal"
+        ></button>
+
+      </div>
+
+      <div class="modal-body">
+
+        <form>
+
+          <div class="mb-3">
+            <input
+              type="text"
+              class="form-control input-modal"
+              placeholder="Tu nombre"
+            >
+          </div>
+
+          <div class="mb-3">
+            <input
+              type="email"
+              class="form-control input-modal"
+              placeholder="Tu correo"
+            >
+          </div>
+
+          <div class="mb-3">
+            <textarea
+              class="form-control input-modal"
+              rows="4"
+              placeholder="Describe el error..."
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            class="btn-enviar-modal"
+          >
+            Enviar reporte
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- Bootstrap JS -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

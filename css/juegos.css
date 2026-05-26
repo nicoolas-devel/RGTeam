@@ -650,7 +650,8 @@ a {
 .pagination-custom {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 20px;
+  margin-bottom: 40px;
   gap: 12px;
 }
 

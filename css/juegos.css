@@ -630,3 +630,17 @@ a {
   .footer__bottom { flex-direction: column; align-items: flex-start; padding: 1rem 1.25rem; }
   .footer__bottom-right { width: 100%; justify-content: flex-start; }
 }
+
+/* =========================================
+   FIX BOTON COMPRAR CAROUSEL
+========================================= */
+
+.carousel-overlay {
+  pointer-events: none;
+}
+
+.carousel-caption a {
+  position: relative;
+  z-index: 9999;
+  pointer-events: auto;
+}

@@ -680,3 +680,71 @@ a {
   border-color: #ff00ff;
   box-shadow: 0 0 20px #ff00ff;
 }
+
+/* =========================================
+   DETALLE PRODUCTOS
+========================================= */
+
+.detalle-img {
+  width: 100%;
+  border-radius: 14px;
+  border: 2px solid #16193b;
+  box-shadow: 0 0 20px rgba(0, 229, 255, 0.15);
+}
+
+.detalle-titulo {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.5rem;
+  color: #ff00ff;
+  margin-bottom: 20px;
+}
+
+.detalle-descripcion {
+  color: #b8b8c7;
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.detalle-precio {
+  font-family: 'Orbitron', sans-serif;
+  color: #00e5ff;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* =========================================
+   COMENTARIOS
+========================================= */
+
+.comentarios-titulo {
+  font-family: 'Orbitron', sans-serif;
+  color: #00e5ff;
+  margin-bottom: 25px;
+}
+
+.comentario-card {
+  background-color: #0b0c1e;
+  border: 1px solid #16193b;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: 0.3s ease;
+}
+
+.comentario-card:hover {
+  border-color: #00e5ff;
+  box-shadow: 0 0 15px rgba(0, 229, 255, 0.15);
+}
+
+.comentario-card h5 {
+  color: #ff00ff;
+  margin-bottom: 10px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.comentario-card p {
+  color: #b8b8c7;
+  margin: 0;
+  line-height: 1.7;
+}

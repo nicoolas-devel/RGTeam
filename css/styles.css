@@ -1362,3 +1362,60 @@ body {
 
   transform: translateY(-3px) scale(1.03);
 }
+
+/* ===== MODAL RGTEAM ===== */
+
+.modal-rgteam{
+  background: rgba(10,10,25,0.95);
+  border: 1px solid #00e5ff;
+  border-radius: 20px;
+  box-shadow:
+    0 0 15px #00e5ff55,
+    0 0 40px #ff00ff22;
+  backdrop-filter: blur(12px);
+  color: white;
+}
+
+.titulo-modal-rg{
+  color: #00e5ff;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.texto-modal-rg{
+  font-size: 1.1rem;
+  color: #d9d9d9;
+}
+
+.btn-modal-principal{
+  background: linear-gradient(90deg,#00e5ff,#0066ff);
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-modal-principal:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 0 15px #00e5ff;
+}
+
+.btn-modal-secundario{
+  background: transparent;
+  border: 1px solid #ff00ff;
+  color: #ff00ff;
+  padding: 12px 22px;
+  border-radius: 12px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-modal-secundario:hover{
+  background: #ff00ff;
+  color: white;
+  box-shadow: 0 0 15px #ff00ff;
+}

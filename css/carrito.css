@@ -1,25 +1,23 @@
-/* =====================================================
-   VARIABLES Y CONFIGURACIÓN GENERAL
-   ===================================================== */
+
 :root {
-  /* Fondos */
+
   --bg-primary: #0a0a0f;
   --bg-secondary: #0d111c;
   --bg-card: #161b26;
 
-  /* Colores */
+
   --accent-cyan: #00e5ff;
   --accent-green: #00ffcc;
   --accent-pink: #ff2d78;
   --accent-purple: #a855f7;
   --bg-purple-btn: #3b1e6e;
 
-  /* Textos */
+
   --text-primary: #ffffff;
   --text-secondary: #a0a0b0;
   --text-muted: #6a6a7a;
 
-  /* Bordes */
+
   --border-color: #222834;
 }
 
@@ -48,9 +46,6 @@ a {
   color: inherit;
 }
 
-/* =====================================================
-   NAVBAR
-   ===================================================== */
 
 .barra-navegacion {
   background: linear-gradient(to right, #05050a, #101625, #05050a);
@@ -252,9 +247,6 @@ a {
   }
 }
 
-/* =====================================================
-   TABLA DE COMPRAS (Estilo de la primera captura)
-   ===================================================== */
 .cart-list-container {
   background-color: var(--bg-primary);
   padding: 40px 20px;
@@ -280,7 +272,6 @@ a {
   border: none;
 }
 
-/* Filas y Celdas */
 .table-cart tbody tr {
   border-bottom: 1px solid var(--border-color);
 }
@@ -291,7 +282,6 @@ a {
   color: white;
 }
 
-/* Columna Producto */
 .img-thumbnail-cart {
   width: 70px;
   height: 70px;
@@ -318,7 +308,6 @@ a {
   color: var(--text-muted) !important;
 }
 
-/* Columna Precio (Efecto Violeta/Morado) */
 .price-old {
   font-size: 12px;
   color: var(--text-muted);
@@ -327,7 +316,7 @@ a {
 .price-current {
   font-size: 15px;
   font-weight: 700;
-  color: #ff00ff; /* Tono violeta fiel a la imagen */
+  color: #ff00ff; 
 }
 
 .badge-discount {
@@ -339,7 +328,6 @@ a {
   border-radius: 4px;
 }
 
-/* Columna Total y Acciones */
 .btn-buy-text-cart {
   background-color: var(--bg-purple-btn) !important;
   color: white !important;
@@ -374,9 +362,6 @@ a {
   color: var(--accent-pink) !important;
 }
 
-/* =====================================================
-   MODAL LOGIN
-   ===================================================== */
 .modal-login-rg {
   background: #0b0f1a;
   border: 1px solid rgba(0,229,255,0.2);
@@ -485,9 +470,6 @@ a {
   .titulo-login { text-align: center; }
 }
 
-/* =====================================================
-   FOOTER
-   ===================================================== */
 .footer {
   background-color: var(--bg-secondary);
   border-top: 1px solid var(--border-color);

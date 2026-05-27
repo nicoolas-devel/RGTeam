@@ -1419,3 +1419,38 @@ body {
   color: white;
   box-shadow: 0 0 15px #ff00ff;
 }
+
+/* ===== BOTON VOLVER HOME ===== */
+
+.btn-volver-home{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 14px 30px;
+
+  border: 2px solid #00e5ff;
+  border-radius: 14px;
+
+  color: #00e5ff;
+  text-decoration: none;
+
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+
+  background: rgba(0,229,255,0.05);
+
+  transition: 0.3s ease;
+}
+
+.btn-volver-home:hover{
+  background: #00e5ff;
+  color: #050816;
+
+  box-shadow:
+    0 0 15px #00e5ff,
+    0 0 30px #00e5ff55;
+
+  transform: translateY(-3px);
+}

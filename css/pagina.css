@@ -1,25 +1,22 @@
-/* =====================================================
-   VARIABLES Y CONFIGURACIÓN GENERAL
-   ===================================================== */
+
 :root {
-  /* Fondos */
+
   --bg-primary: #0a0a0f;
   --bg-secondary: #0d111c;
   --bg-card: #161b26;
 
-  /* Colores */
   --accent-cyan: #00e5ff;
   --accent-green: #00ffcc;
   --accent-pink: #ff2d78;
   --accent-purple: #a855f7;
   --bg-purple-btn: #3b1e6e;
 
-  /* Textos */
+
   --text-primary: #ffffff;
   --text-secondary: #a0a0b0;
   --text-muted: #6a6a7a;
 
-  /* Bordes */
+
   --border-color: #222834;
 }
 
@@ -48,9 +45,6 @@ a {
   color: inherit;
 }
 
-/* =====================================================
-   NAVBAR (Optimizado según la segunda imagen)
-   ===================================================== */
 .barra-navegacion {
   background: #07090e;
   padding: 14px 24px;
@@ -100,7 +94,7 @@ a {
   color: white !important;
 }
 
-/* Enlace Activo iluminado idéntico a la foto */
+
 .nav-link.active {
   color: var(--accent-cyan) !important;
   border: 1px solid rgba(0, 229, 255, 0.3);
@@ -150,7 +144,6 @@ a {
   font-size: 15px;
 }
 
-/* Botones de acción derecha */
 .contenedor-botones {
   align-items: center;
 }
@@ -210,9 +203,6 @@ a {
   }
 }
 
-/* =====================================================
-   TABLA DE COMPRAS (Estilo de la primera captura)
-   ===================================================== */
 .cart-list-container {
   background-color: var(--bg-primary);
   padding: 40px 20px;
@@ -223,7 +213,6 @@ a {
   color: var(--text-primary);
 }
 
-/* Encabezados de la Tabla */
 .table-cart thead tr {
   border-bottom: 1px solid var(--border-color);
 }
@@ -249,7 +238,6 @@ a {
   color: white;
 }
 
-/* Columna Producto */
 .img-thumbnail-cart {
   width: 70px;
   height: 70px;
@@ -276,7 +264,6 @@ a {
   color: var(--text-muted) !important;
 }
 
-/* Columna Precio (Efecto Violeta/Morado) */
 .price-old {
   font-size: 12px;
   color: var(--text-muted);
@@ -285,7 +272,7 @@ a {
 .price-current {
   font-size: 15px;
   font-weight: 700;
-  color: #ff00ff; /* Tono violeta fiel a la imagen */
+  color: #ff00ff; 
 }
 
 .badge-discount {
@@ -297,7 +284,7 @@ a {
   border-radius: 4px;
 }
 
-/* Columna Total y Acciones */
+
 .btn-buy-text-cart {
   background-color: var(--bg-purple-btn) !important;
   color: white !important;
@@ -332,9 +319,6 @@ a {
   color: var(--accent-pink) !important;
 }
 
-/* =====================================================
-   MODAL LOGIN
-   ===================================================== */
 .modal-login-rg {
   background: #0b0f1a;
   border: 1px solid rgba(0,229,255,0.2);
@@ -443,9 +427,6 @@ a {
   .titulo-login { text-align: center; }
 }
 
-/* =====================================================
-   FOOTER
-   ===================================================== */
 .footer {
   background-color: var(--bg-secondary);
   border-top: 1px solid var(--border-color);

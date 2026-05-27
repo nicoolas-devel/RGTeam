@@ -21,8 +21,6 @@ body{
   color: white;
 }
 
-/* GRID */
-
 .grid{
   position: absolute;
   inset: 0;
@@ -36,7 +34,6 @@ body{
   mask-image: linear-gradient(to bottom, transparent 0%, black 30%, black 100%);
 }
 
-/* GLOWS */
 
 .glow{
   position: absolute;
@@ -58,7 +55,6 @@ body{
   bottom: -120px;
 }
 
-/* CONTENEDOR */
 
 .error-container{
   width: 100%;
@@ -72,14 +68,10 @@ body{
   z-index: 2;
 }
 
-/* CONTENIDO */
-
 .error-content{
   text-align: center;
   max-width: 720px;
 }
-
-/* MINI TEXT */
 
 .mini-text{
   color: #00e5ff;
@@ -91,7 +83,6 @@ body{
   0 0 10px rgba(0,229,255,0.7);
 }
 
-/* 404 */
 
 .error-code{
   font-family: 'Orbitron', sans-serif;
@@ -120,8 +111,6 @@ body{
   0 0 35px rgba(0,229,255,0.5);
 }
 
-/* ANIMACION */
-
 @keyframes float{
 
   0%,100%{
@@ -134,8 +123,6 @@ body{
 
 }
 
-/* TITULO */
-
 .title{
   font-family: 'Orbitron', sans-serif;
 
@@ -145,7 +132,6 @@ body{
   letter-spacing: 3px;
 }
 
-/* DESCRIPCION */
 
 .description{
   color: #aab3c5;
@@ -159,8 +145,6 @@ body{
   margin: auto auto 45px auto;
 }
 
-/* BOTONES */
-
 .buttons{
   display: flex;
   justify-content: center;
@@ -168,7 +152,6 @@ body{
   flex-wrap: wrap;
 }
 
-/* BOTON PRINCIPAL */
 
 .btn-main{
   padding: 15px 34px;
@@ -198,7 +181,6 @@ body{
   0 0 35px rgba(0,229,255,0.7);
 }
 
-/* BOTON SECUNDARIO */
 
 .btn-outline{
   padding: 15px 34px;
@@ -231,8 +213,6 @@ body{
   transform: translateY(-4px);
 }
 
-/* RESPONSIVE */
-
 @media(max-width:768px){
 
   .error-code{
@@ -261,9 +241,6 @@ body{
 
 }
 
-/* =====================================================
-   MODAL CYBERPUNK
-   ===================================================== */
 
 .modal-content{
   background: transparent;
@@ -291,7 +268,6 @@ body{
   0 0 80px rgba(255,0,140,0.08);
 }
 
-/* HEADER */
 
 .modal-header{
   padding: 22px 24px 10px 24px;
@@ -310,13 +286,10 @@ body{
   0 0 12px rgba(0,229,255,0.45);
 }
 
-/* BODY */
 
 .modal-body{
   padding: 20px 24px 28px 24px;
 }
-
-/* INPUTS */
 
 .input-modal{
   background: rgba(255,255,255,0.03) !important;
@@ -349,7 +322,6 @@ body{
   0 0 15px rgba(0,229,255,0.2) !important;
 }
 
-/* BOTON */
 
 .btn-enviar-modal{
   width: 100%;
@@ -396,7 +368,6 @@ body{
   0 0 28px rgba(0,229,255,0.45);
 }
 
-/* BOTON CERRAR */
 
 .btn-close{
   filter: invert(1);

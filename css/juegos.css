@@ -1,28 +1,26 @@
-/* =====================================================
-   VARIABLES Y CONFIGURACIÓN GENERAL
-   ===================================================== */
+
 :root {
-  /* Fondos */
+
   --bg-primary: #0a0a0f;
   --bg-secondary: #0d111c;
   --bg-card: #161b26;
 
-  /* Colores */
+
   --accent-cyan: #00e5ff;
   --accent-green: #00ffcc;
   --accent-pink: #ff2d78;
   --accent-purple: #00e5ff;
   --bg-purple-btn: #3b1e6e;
 
-  /* Textos */
+
   --text-primary: #ffffff;
   --text-secondary: #a0a0b0;
   --text-muted: #6a6a7a;
 
-  /* Bordes */
+
   --border-color: #222834;
 
-  /* NUEVAS VARIABLES EXCLUSIVAS PARA EL CARRUSEL */
+
   --carousel-text-gray: #bcbcbc;
 }
 
@@ -52,11 +50,6 @@ a {
   color: inherit;
 }
 
-/* =====================================================
-   CARRUSEL (Corregido estilo God of War / Cyberpunk)
-   ===================================================== */
-
-/* Contenedor del carrusel con bordes redondeados */
 .custom-carousel {
   border-radius: 16px;
   overflow: hidden;
@@ -64,7 +57,7 @@ a {
   box-shadow: 0 10px 35px rgba(0, 0, 0, 0.7);
 }
 
-/* Dimensiones del banner estilo tienda oficial */
+
 .carousel-img {
   width: 100%;
   height: clamp(450px, 40vw, 560px); 
@@ -72,7 +65,7 @@ a {
   filter: brightness(0.75);
 }
 
-/* Ajustes milimétricos de encuadre originales conservados */
+
 .carousel-item:nth-child(1) .carousel-img {
   object-position: center 30%;
 }
@@ -85,7 +78,7 @@ a {
   object-position: center center;
 }
 
-/* Capa degradada cinematográfica para oscurecer el fondo detrás del texto */
+
 .carousel-overlay {
   position: absolute;
   top: 0;
@@ -96,7 +89,6 @@ a {
   z-index: 1;
 }
 
-/* Posicionamiento del texto a la izquierda */
 .custom-caption {
   z-index: 2;
   left: 8% !important;
@@ -110,7 +102,7 @@ a {
   padding: 0;
 }
 
-/* Nombre del juego - Tipografía unificada y con efecto de brillo Cyberpunk */
+
 .custom-caption h1 {
   font-family: 'Orbitron', sans-serif;
   font-size: 3.5rem;
@@ -123,7 +115,7 @@ a {
   text-shadow: 0 0 12px rgba(0, 229, 255, 0.6), 0 0 25px rgba(0, 229, 255, 0.2);
 }
 
-/* Subtítulo / Edición - Color corregido a juego con el botón de compras (Cian) */
+
 .custom-caption h3.tracking-wide {
   font-family: 'Orbitron', sans-serif;
   letter-spacing: 2px;
@@ -134,7 +126,7 @@ a {
   margin-bottom: 12px !important;
 }
 
-/* Descripción del juego - Mismo formato y estilo de letra suavizado */
+
 .text-light-gray {
   font-family: 'Orbitron', sans-serif;
   color: var(--carousel-text-gray);
@@ -143,7 +135,7 @@ a {
   line-height: 1.6;
 }
 
-/* Precio destacado - Mismo formato y color Cian Neón */
+
 .custom-caption h4 {
   font-family: 'Orbitron', sans-serif;
   font-size: 2.2rem;
@@ -154,7 +146,6 @@ a {
   text-shadow: 0 0 10px rgba(0, 229, 255, 0.3);
 }
 
-/* Botón de Compra Delineado Estilo Cyberpunk/God of War */
 .btn-purple {
   font-family: 'Orbitron', sans-serif;
   background-color: transparent !important;
@@ -175,7 +166,6 @@ a {
   transform: translateY(-1px);
 }
 
-/* Indicadores circulares adaptados al color cian activo de la nueva interfaz */
 .custom-indicators button {
   width: 10px !important;
   height: 10px !important;
@@ -192,30 +182,24 @@ a {
   border-radius: 10px !important;
 }
 
-/* =====================================================
-   ESTILOS DE LAS TARJETAS DE JUEGOS (Colores de la Foto)
-   ===================================================== */
-
-/* Contenedor principal de la tarjeta */
 .custom-game-card {
   background-color: #0b0c1e !important;
   border: 1px solid #16193b !important;
   border-radius: 8px !important;
   overflow: hidden;
-  height: 100%; /* Mantiene todas las tarjetas de igual altura */
+  height: 100%; 
   display: flex;
   flex-direction: column;
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
-/* Efecto hover con el Cian (#00f0ff) de tu diseño original */
+
 .custom-game-card:hover {
   transform: translateY(-5px);
   border-color: #00f0ff !important;
   box-shadow: 0 5px 15px rgba(0, 240, 255, 0.15);
 }
 
-/* Encabezado superior con el título del juego */
 .game-card-header {
   font-family: 'Orbitron', sans-serif;
   font-size: 1.05rem;
@@ -224,10 +208,10 @@ a {
   padding: 1.25rem 1.25rem 0.5rem 1.25rem;
   text-transform: uppercase;
   border-bottom: 1px solid #16193b;
-  background-color: rgba(0, 0, 0, 0.15); /* Toque oscuro extra para separar */
+  background-color: rgba(0, 0, 0, 0.15); 
 }
 
-/* Ajuste simétrico de la imagen del juego */
+
 .custom-game-card .card-img-top {
   width: 100%;
   height: 220px;
@@ -237,7 +221,7 @@ a {
   border-bottom: 1px solid #16193b;
 }
 
-/* Cuerpo interno de la tarjeta */
+
 .custom-game-card .card-body {
   padding: 1.25rem !important;
   display: flex;
@@ -246,7 +230,7 @@ a {
   flex-grow: 1;
 }
 
-/* Texto de descripción */
+
 .custom-game-card .card-text {
   font-family: 'Rajdhani', sans-serif;
   color: #a3a8cc;
@@ -255,7 +239,7 @@ a {
   margin-bottom: 1.5rem;
 }
 
-/* Contenedor inferior (Precio y Botón de compra) */
+
 .game-card-footer {
   display: flex;
   justify-content: space-between;
@@ -266,7 +250,7 @@ a {
   width: 100%;
 }
 
-/* Precio destacado en Fucsia/Magenta */
+
 .game-card-price {
   font-family: 'Orbitron', sans-serif;
   color: #ff00ff !important;
@@ -275,7 +259,7 @@ a {
   letter-spacing: 0.5px;
 }
 
-/* Botón de compra (Carrito) */
+
 .btn-game-cart {
   background-color: transparent;
   border: 1px solid #ff00ff;
@@ -290,16 +274,13 @@ a {
   cursor: pointer;
 }
 
-/* Efecto hover al pasar sobre el botón del carrito */
+
 .btn-game-cart:hover {
   background-color: #ff00ff;
   color: #ffffff;
   box-shadow: 0 0 10px rgba(255, 0, 255, 0.4);
 }
 
-/* =====================================================
-   ESTILOS DE INTERFAZ COMPLEMENTARIOS (Sección Modal)
-   ===================================================== */
 .bg-dark-custom {
   background-color: #12141c !important;
 }
@@ -334,9 +315,6 @@ a {
   box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25) !important;
 }
 
-/* =====================================================
-   MODAL LOGIN
-   ===================================================== */
 .modal-login-rg {
   background: #0b0f1a;
   border: 1px solid rgba(0,229,255,0.2);
@@ -445,9 +423,6 @@ a {
   .titulo-login { text-align: center; }
 }
 
-/* =====================================================
-   FOOTER
-   ===================================================== */
 .footer {
   background-color: var(--bg-secondary);
   border-top: 1px solid var(--border-color);
@@ -634,10 +609,6 @@ a {
   .footer__bottom-right { width: 100%; justify-content: flex-start; }
 }
 
-/* =========================================
-   FIX BOTON COMPRAR CAROUSEL
-========================================= */
-
 .carousel-overlay {
   pointer-events: none;
 }
@@ -648,7 +619,6 @@ a {
   pointer-events: auto;
 }
 
-/* ===== PAGINACIÓN ===== */
 
 .pagination-custom {
   display: flex;
@@ -681,10 +651,6 @@ a {
   box-shadow: 0 0 20px #ff00ff;
 }
 
-/* =========================================
-   DETALLE PRODUCTOS
-========================================= */
-
 .detalle-img {
   width: 100%;
   border-radius: 14px;
@@ -712,10 +678,6 @@ a {
   font-size: 2rem;
   margin-bottom: 20px;
 }
-
-/* =========================================
-   COMENTARIOS
-========================================= */
 
 .comentarios-titulo {
   font-family: 'Orbitron', sans-serif;

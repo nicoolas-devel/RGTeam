@@ -3,29 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-    <!-- CSS -->
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/banner.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800&display=swap" rel="stylesheet" />
     <title>RGTeam</title>
   </head>
   <body>
-
-    <!-- ===== NAVBAR ===== -->
 <header id="inicio">
   <nav class="navbar navbar-expand-lg barra-navegacion">
     <div class="container-fluid">
-
       <a class="navbar-brand logo-rgteam" href="#">
         <span class="logo-rg">RG</span>
         <span class="logo-team">Team</span>
       </a>
-
       <button
         class="navbar-toggler"
         type="button"
@@ -34,45 +26,36 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-
       <div class="collapse navbar-collapse" id="menuNavbar">
-
         <ul class="navbar-nav mx-auto">
           <li class="nav-item">
             <a class="nav-link active" href="./index.html">INICIO</a>
           </li>
-
           <li class="nav-item">
             <a class="nav-link" href="./pages/juegos.html">JUEGOS</a>
           </li>
-
           <li class="nav-item">
             <a class="nav-link" href="./pages/contacto.html">CONTACTO</a>
           </li>
-
           <li class="nav-item">
             <a class="nav-link" href="./pages/nosotros.html">ACERCA DE</a>
           </li>
         </ul>
-
         <form class="d-flex caja-buscador me-3">
           <input
             class="form-control input-buscador"
             type="search"
             placeholder="Buscar juegos..."
           />
-
           <button class="btn boton-buscador" type="submit">
             <i class="bi bi-search"></i>
           </button>
         </form>
-
         <div class="d-flex gap-2 contenedor-botones">
           <button class="btn boton-rg">
             <i class="bi bi-cart"></i>
             <a href="./pages/carrito.html">CARRITO</a> 
           </button>
-
           <button
           class="btn boton-rg"
           data-bs-toggle="modal"
@@ -80,13 +63,11 @@
           >
           <i class="bi bi-person"></i> LOGIN
           </button>
-
           <button class="btn boton-rg">
             <i class="bi bi-person-plus"></i> 
             <a href="./pages/registro.html">REGISTRO</a>
           </button>
         </div>
-
       </div>
     </div>
   </nav>
@@ -96,26 +77,17 @@
   class="modal fade"
   id="modalLogin"
   tabindex="-1"
-  aria-hidden="true"
->
+  aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-lg">
     <div class="modal-content modal-login-rg">
-
       <div class="row g-0">
-
-        <!-- Imagen -->
         <div class="col-md-6 d-none d-md-block">
           <div class="imagen-login"></div>
-        </div>
-
-        <!-- Formulario -->
+        </div>       
         <div class="col-md-6">
           <div class="contenido-login">
-
             <h2 class="titulo-login">Bienvenido</h2>
-
             <form action="./pages/error404.html">
-
               <div class="mb-3">
                 <input
                   type="email"
@@ -124,7 +96,6 @@
                   required
                 >
               </div>
-
               <div class="mb-3">
                 <input
                   type="password"
@@ -133,51 +104,38 @@
                   required
                 >
               </div>
-
               <div class="text-end mb-3">
                 <a href="./pages/error404.html" class="link-login">
                   ¿Olvidaste tu contraseña?
                 </a>
               </div>
-
               <button type="submit" class="btn boton-login-w100">
                 Ingresar
               </button>
-
             </form>
-
             <div class="separador-login">
               <span>O continuar con</span>
             </div>
-
             <div class="d-flex gap-2 mt-3">
-
               <a
                 href="./pages/error404.html"
                 class="btn boton-social w-100"
               >
                 <i class="bi bi-google"></i> Google
               </a>
-
               <a
                 href="./pages/error404.html"
                 class="btn boton-social w-100"
               >
                 <i class="bi bi-facebook"></i> Facebook
               </a>
-
             </div>
-
           </div>
         </div>
-
       </div>
-
     </div>
   </div>
 </div>
-
-      <!-- ===== CAROUSEL ===== -->
       <section>
         <div class="carousel-wrapper">
           <div id="carouselGamer" class="carousel slide" data-bs-ride="carousel">
@@ -248,7 +206,6 @@
           </div>
         </div>
       </section>
-      <!-- ===== JUEGOS DESTACADOS ===== -->
       <section id="juegos">
       <section>
         <div class="container my-4">
@@ -256,9 +213,7 @@
             <h3 class="m-0">JUEGOS DESTACADOS</h3>
             <a href="./pages/juegos.html" class="text-decoration-none" style="color:#ff00ff;font-weight:bold;text-transform:uppercase;font-size:0.9rem;">Ver todos &rarr;</a>
           </div>
-
        <div class="row g-4">
-  
   <div class="col-12 col-sm-6 col-lg-4">
     <div class="card">
       <h6>🧟 Resident Evil</h6>
@@ -282,7 +237,6 @@
       </div>
     </div>
   </div>
-
   <div class="col-12 col-sm-6 col-lg-4">
     <div class="card">
       <h6>🚗 Forza Horizon 6</h6>
@@ -306,7 +260,6 @@
       </div>
     </div>
   </div>
-
   <div class="col-12 col-sm-6 col-lg-4">
     <div class="card">
       <h6>⚽ EA Sports FC 26</h6>
@@ -330,21 +283,16 @@
       </div>
     </div>
   </div>
-
 </div>
 <section class="banner-section d-none d-md-block mt-4"></section>
 <section class="banner-section d-none d-md-block">
-  <div class="gb position-relative w-100 d-flex flex-column align-items-center justify-content-center text-center py-5 px-3 overflow-hidden">
-    
+  <div class="gb position-relative w-100 d-flex flex-column align-items-center justify-content-center text-center py-5 px-3 overflow-hidden">   
     <div class="gb-tag mb-4">
       <div class="gb-dot"></div> OFERTAS ACTIVAS AHORA
     </div>
-
     <h2 class="gb-title mb-4">SUPER<span>OFERTAS</span></h2>
     <p class="gb-sub mx-auto mb-4">Descuentos exclusivos, juegos gratis y regalos con tu compra. Solo por tiempo limitado.</p>
-
     <a href="./pages/carrito.html" class="gb-btn-main mb-4">¡APROVECHÁ AHORA!</a>
-
     <div class="gb-stats d-flex">
       <div class="gb-stat px-4 py-3 text-center border-end">
         <div class="gb-stat-n">+500</div>
@@ -407,8 +355,6 @@
           </div>
         </div>
       </section>
-
-      <!-- ===== HERO SECTION ===== -->
       <section class="hero">
         <div class="hero__overlay"></div>
         <div class="hero__content">
@@ -426,9 +372,6 @@
           </div>
         </div>
       </section>
-
-  
-
 <div class="container-fluid contenedor-publicidad d-none d-lg-block">
     <div class="row h-100 justify-content-center align-items-center g-3">
         
@@ -447,16 +390,11 @@
         <div class="col-auto text-center">
             <img src="./assets/img/rolling 3.png" alt="Publicidad Full Stack" class="img-publicidad">
         </div>
-
     </div>
 </div>
 </main>
-
-    <!-- ===== FOOTER ===== -->
     <footer class="footer">
       <div class="footer__inner">
-
-        <!-- Brand -->
         <div class="footer__brand">
           <div class="footer__logo">
             <span class="footer__logo--rg">RG</span><span class="footer__logo--team">Team</span>
@@ -484,8 +422,6 @@
             </a>
           </div>
         </div>
-
-        <!-- Links columns -->
         <div class="footer__col">
           <h4 class="footer__col-title">ENLACES</h4>
           <ul class="footer__list">
@@ -497,7 +433,6 @@
             <li><a href="./pages/juegos.html">Tienda</a></li>
           </ul>
         </div>
-
         <div class="footer__col">
           <h4 class="footer__col-title">SOPORTE</h4>
           <ul class="footer__list">
@@ -508,7 +443,6 @@
             <li><a href="./pages/error404.html">Preguntas frecuentes</a></li>
           </ul>
         </div>
-
         <div class="footer__col">
           <h4 class="footer__col-title">LEGAL</h4>
           <ul class="footer__list">
@@ -518,7 +452,6 @@
             <li><a href="./pages/error404.html">Código de conducta</a></li>
           </ul>
         </div>
-
       </div>
        <div class="footer__bottom">
         <p class="footer__copy">© 2026 RGTeam. Todos los derechos reservados.</p>
@@ -526,51 +459,39 @@
         </div>
       </div>
     </footer>
-
-<!-- ===== MODAL COMPRA RGTEAM ===== -->
 <div class="modal fade" id="modalCompra" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    
+  <div class="modal-dialog modal-dialog-centered">   
     <div class="modal-content modal-rgteam">
-
       <div class="modal-header border-0">
         <h5 class="modal-title titulo-modal-rg">
           <i class="bi bi-controller"></i>
           PRODUCTO AGREGADO
         </h5>
-
         <button
           type="button"
           class="btn-close btn-close-white"
           data-bs-dismiss="modal">
         </button>
       </div>
-
       <div class="modal-body text-center">
         <p class="texto-modal-rg">
           El juego fue agregado correctamente al carrito 🛒
         </p>
       </div>
-
       <div class="modal-footer border-0 justify-content-center gap-3">
-
         <button
           type="button"
           class="btn-modal-secundario"
           data-bs-dismiss="modal">
           SEGUIR COMPRANDO
         </button>
-
         <a href="./pages/carrito.html" class="btn-modal-principal">
           IR AL CARRITO
         </a>
-
       </div>
-
     </div>
   </div>
 </div>
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html
